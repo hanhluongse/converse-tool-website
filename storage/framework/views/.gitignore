@@ -1,0 +1,16 @@
+*
+!.gitignore
+
+/vendor
+/node_modules
+/storage
+.env
+/.env.example
+/public/storage
+/public/hot
+/public/storage
+/public/vendor
+/database/database.sqlite
+/bootstrap/cache
+/.vscode
+/.idea
