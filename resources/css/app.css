@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clip-path-chevron {
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.white-atelier {
+    width: 480px;
+    height: 95px;
+
+}
