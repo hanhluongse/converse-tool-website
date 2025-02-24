@@ -12,7 +12,14 @@
     selectedShoe: null,
     selectedTab: 'STANDARD', 
     selectedSticker: null, 
-    selectedShoe: 'all-star-hi'
+    selectedShoe: 'all-star-hi',
+
+    textTypography: null,
+
+    selectedFont: null, 
+    selectedColor: null, 
+    selectedSize: 'M', 
+    textInput: ''
 }">
     @if(isset($showSteps) && $showSteps)
         @include('components.step-navigation', ['currentStep' => $currentStep ?? 1])
