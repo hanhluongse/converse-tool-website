@@ -184,6 +184,10 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            changeTab("STANDARD"); // Auto-select STANDARD tab on load
+        });
+
         function changeTab(tab) {
             document.querySelectorAll(".sticker-item").forEach(item => {
                 item.style.display = item.dataset.tab === tab ? "block" : "none";
