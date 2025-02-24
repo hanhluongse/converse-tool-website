@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* @theme {
+  --font-poppins: Poppins, sans-serif;
+} */
+
+@layer components {
+  .step {
+    @apply flex-1 text-center py-3 relative bg-[#C1C4BE] text-white font-bold flex justify-center items-center overflow-visible;
+  }
+
+  .active {
+    @apply bg-black;
+  }
+
+  .arrow {
+    @apply absolute -right-3 w-0 h-0;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-left: 12px solid #c1c4be;
+    z-index: 4;
+  }
+
+  .white-border {
+    @apply border-l-white;
+    z-index: 4;
+  }
+
+  .white-border::after {
+    content: "";
+    @apply absolute -top-6 right-[1px] w-0 h-0;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    border-left: 12px solid #c1c4be;
+    z-index: 1;
+  }
+
+  .active .arrow {
+    border-left-color: black;
+  }
+
+  .step-end {
+    @apply flex-1 text-center py-3 bg-[#C1C4BE] text-white font-bold flex justify-center items-center;
+  }
+}
+/* @theme {
+} */
